@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.mobile-header {
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -1.14px;
+}

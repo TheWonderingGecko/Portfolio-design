@@ -11,23 +11,31 @@ export default {
         sub_text_color: '#D9D9D9',
       },
       fontFamily: {
-        portfolio_text: ['Space Grotesk Bold', 'sans-serif'],
+        portfolio_text: ['Space Grotesk', 'sans-serif'],
       },
       fontSize: {
         xl: '88px',
         lg: '48px',
         m: '24px',
         blg: '18px',
+        m_sm: '16px',
       },
       lineHeight: {
         xl: '88px',
         lg: '56px',
         m: '32px',
         blg: '28px',
+        m_sm: '26px',
       },
       letterSpacing: {
         xl: '-2.5px',
         lg: '-1.5px',
+        m_sm: '2.29px',
+      },
+
+      fontWeight: {
+        bold: '700',
+        semibold: '500',
       },
     },
   },
