@@ -8,7 +8,7 @@ import circle from './assets/images/pattern-circle.svg'
 
 function App() {
   return (
-    <div className="h-full w-screen bg-base font-portfolio_text relative">
+    <div className="h-full w-screen bg-base font-portfolio_text relative ">
       <img
         src={rings}
         alt=""
@@ -71,11 +71,40 @@ function App() {
           </h2>
         </section>
 
-        <section className="w-3/4">
-          HTML 4 Years Experience CSS 4 Years Experience JavaScript 4 Years
-          Experience Accessibility 4 Years Experience React 3 Years Experience
-          Sass 3 Years Experience
+        <section className="w-5/6 flex  relative flex-col text-center gap-3 justify-center h-full pb-20 border-b-2">
+          <img
+            src={rings}
+            alt=""
+            className="absolute -bottom-11 -right-3/4  transform scale-150 landscape:-left-1/2"
+          />
+
+          <div>
+            <h3 className="font-bold text-m_m">HTML</h3>{' '}
+            <span className=" text-sub_text_color">4 Years Experience</span>
+          </div>
+          <div>
+            <h3 className="font-bold text-m_m">CSS</h3>{' '}
+            <span className=" text-sub_text_color">4 Years Experience</span>
+          </div>
+          <div>
+            <h3 className="font-bold text-m_m">Javascript</h3>{' '}
+            <span className=" text-sub_text_color">4 Years Experience</span>
+          </div>
+          <div>
+            <h3 className="font-bold text-m_m">Accessibility</h3>{' '}
+            <span className=" text-sub_text_color">4 Years Experience</span>
+          </div>
+          <div>
+            <h3 className="font-bold text-m_m">React</h3>{' '}
+            <span className=" text-sub_text_color">3 Years Experience</span>
+          </div>
+
+          <div>
+            <h3 className="font-bold text-m_m">Sass</h3>{' '}
+            <span className=" text-sub_text_color">3 Years Experience</span>
+          </div>
         </section>
+
         <section className="w-3/4">
           Projects Contact me Design portfolio HTML CSS View project View code
           E-learning landing page HTML CSS View project View code Todo web app

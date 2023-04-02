@@ -19,6 +19,7 @@ export default {
         m: '24px',
         blg: '18px',
         m_sm: '16px',
+        m_m: '32px',
       },
       lineHeight: {
         xl: '88px',
