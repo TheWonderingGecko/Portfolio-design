@@ -8,6 +8,7 @@ export default {
         sub_base: '#242424',
         underlined: '#4EE1A0',
         text_color: '#FFFFFF',
+        logo_color: '#FFF',
         sub_text_color: '#D9D9D9',
       },
       fontFamily: {
