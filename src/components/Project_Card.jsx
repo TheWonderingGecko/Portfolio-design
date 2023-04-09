@@ -3,7 +3,7 @@ const Project_Card = (props) => {
     <div className="relative flex flex-col justify-center gap-5 my-10 ">
       <div className="relative group">
         <img src={props.image} alt={props.title} />
-        <div className="absolute top-0 items-center justify-center hidden w-full h-full bg-black/90 group-hover:flex">
+        <div className="absolute top-0 items-center justify-center hidden w-full h-full bg-black/90 lg:group-hover:flex">
           <div className="flex flex-col items-center justify-center gap-10 font-bold text-center uppercase text-m_sm leading-m_sm tracking-m_sm">
             <span className="pb-4 border-b-2 border-underlined hover:text-underlined">
               <a href="#">View project</a>
