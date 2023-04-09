@@ -19,7 +19,7 @@ function App() {
 
   const handleNameChange = (e) => {
     setName(e.target.value)
-    if (e.target.value.length < 3) {
+    if (e.target.value.length < 3 && e.target.value.length !== 0) {
       setNameError(true)
       console.log(nameError)
     } else {
@@ -206,14 +206,22 @@ function App() {
             I would love to hear about your project and how I could help. Please
             fill in the form, and I’ll get back to you as soon as possible.
           </p>
-          <form className="flex flex-col w-full gap-8 uppercase text-sub_text_color ">
+          <form className="flex flex-col w-full gap-8 text-sub_text_color ">
             <div
               className={
-                'pb-4 border-b-2 ' +
+                'pb-4 border-b-2  relative ' +
                 (name.length !== 0 &&
                   (nameError ? ' border-red-500' : ' border-underlined'))
               }
             >
+              <span
+                class={
+                  'material-symbols-outlined text-red-500 absolute bottom-3 right-4 ' +
+                  (nameError ? ' block' : ' hidden')
+                }
+              >
+                error
+              </span>
               <input
                 type="text"
                 id="name"
@@ -227,11 +235,19 @@ function App() {
             </div>
             <div
               className={
-                'pb-4 border-b-2 ' +
+                'pb-4 border-b-2 relative ' +
                 (email.length !== 0 &&
                   (emailError ? ' border-red-500' : 'border-underlined'))
               }
             >
+              <span
+                class={
+                  'material-symbols-outlined text-red-500 absolute bottom-3 right-4 ' +
+                  (emailError ? ' block' : ' hidden')
+                }
+              >
+                error
+              </span>
               <input
                 type="email"
                 id="email"
@@ -241,6 +257,14 @@ function App() {
                 placeholder="EMAIL"
                 required
               />
+              <span
+                className={
+                  'absolute right-0 text-red-500 lowercase -bottom-6  ' +
+                  (emailError ? ' block' : ' hidden')
+                }
+              >
+                Sorry invalid format here
+              </span>
             </div>
             <div
               className={
